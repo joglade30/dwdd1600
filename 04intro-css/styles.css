@@ -1,4 +1,7 @@
-/* Reset & Basic Styling */
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;700&display=swap');
+
+/* Basic Styling */
 * {
     margin: 0;
     padding: 0;
@@ -7,34 +10,34 @@
 
 body {
     font-family: 'Raleway', sans-serif;
-    color: #333;
     background-color: #F5F5F5; /* Light background */
-    padding: 20px; /* Adds space around content */
+    color: #333; /* Dark text color */
+    padding: 20px; /* Space around content */
 }
 
-/* Header */
+/* Header Styling */
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px;
-    border-bottom: 2px solid #3B3B3B; /* Primary color */
+    padding: 15px 10px;
+    background-color: #3B3B3B; /* Primary color */
+    color: #F5F5F5;
 }
 
 header h1 {
     font-family: 'Playfair Display', serif;
     font-size: 2.5em;
-    color: #3B3B3B;
-    margin: 0;
+    color: #F5F5F5;
 }
 
-header h1 span {
+header span {
     font-size: 1em;
-    color: #6A6A6A; /* Accent color */
-    display: block;
+    font-weight: 400;
+    color: #9F9F9F; /* Accent color */
 }
 
-/* Navigation */
+/* Navigation Styling */
 nav ul {
     display: flex;
     list-style: none;
@@ -46,42 +49,79 @@ nav ul li {
 
 nav a {
     text-decoration: none;
+    color: #F5F5F5;
+    font-weight: 700;
     font-size: 1.1em;
-    color: #3B3B3B;
     padding: 10px 15px;
 }
 
 nav a:hover {
-    color: #6A6A6A;
+    color: #6A6A6A; /* Hover color */
 }
 
-/* Footer */
+/* Footer Styling */
 footer {
     text-align: center;
     padding: 20px;
     background-color: #3B3B3B;
-    color: #F5F5F5; /* Contrasting text color */
+    color: #F5F5F5;
     font-size: 0.9em;
+    border-top: 2px solid #6A6A6A;
 }
 
-/* Content */
+/* Main Content Styling */
 .container {
-    margin: 0 auto;
     max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Headings */
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+    color: #3B3B3B;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.8em;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+/* Paragraphs */
+p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #333;
 }
 
 /* Lists */
-ul, ol {
+ul, ol, dl {
     margin: 20px;
     padding: 0 20px;
 }
 
-ul li {
+ul {
     list-style-type: square;
+}
+
+ul li {
+    margin-bottom: 8px;
 }
 
 ol {
     list-style-type: decimal;
+}
+
+dl {
+    background-color: #EFEFEF;
+    padding: 10px;
+    border: 1px solid #3B3B3B;
+    border-radius: 5px;
 }
 
 /* Guide Items */
