@@ -1,59 +1,108 @@
-/* CSS file: styles.css */
-
-/* Apply font family to the entire document */
-body {
-    font-family: 'Raleway', sans-serif;
+/* Reset & Basic Styling */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
     color: #333;
+    background-color: #F5F5F5; /* Light background */
+    padding: 20px; /* Adds space around content */
 }
 
-/* Heading styles */
-h1, h2, h3 {
-    font-weight: 700; /* Bold font weight for headings */
-    color: #2c3e50;
-    margin: 20px 0;
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 2px solid #3B3B3B; /* Primary color */
 }
 
-h1 {
-    font-size: 2.5rem; /* Large font size for main heading */
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    color: #3B3B3B;
+    margin: 0;
 }
 
-h2 {
-    font-size: 2rem;
+header h1 span {
+    font-size: 1em;
+    color: #6A6A6A; /* Accent color */
+    display: block;
 }
 
-/* Paragraph styles */
-p {
-    font-weight: 400; /* Regular font weight for paragraphs */
-    font-size: 1rem; /* Standard font size for paragraphs */
-    line-height: 1.6;
+/* Navigation */
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1.1em;
+    color: #3B3B3B;
+    padding: 10px 15px;
+}
+
+nav a:hover {
+    color: #6A6A6A;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #3B3B3B;
+    color: #F5F5F5; /* Contrasting text color */
+    font-size: 0.9em;
+}
+
+/* Content */
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Lists */
+ul, ol {
+    margin: 20px;
+    padding: 0 20px;
+}
+
+ul li {
+    list-style-type: square;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+/* Guide Items */
+.guide-item {
+    border: 1px solid #3B3B3B;
+    border-radius: 5px;
+    padding: 15px;
     margin: 10px 0;
 }
 
-/* Navigation styles */
-nav a {
-    font-weight: 700; /* Bold font for navigation links */
-    font-size: 1rem;
-    color: #2980b9;
+/* Buttons and Links */
+button, .back-to-top {
+    background-color: #3B3B3B;
+    color: #F5F5F5;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
     text-decoration: none;
 }
 
-/* Guide list items */
-.guides-list .guide-item h3 {
-    font-size: 1.5rem;
-    font-weight: 700;
-}
-
-.guides-list .guide-item p {
-    font-size: 1rem;
-    font-weight: 400;
-}
-
-.footer {
-    font-size: 0.875rem; /* Smaller font size for footer */
-    font-weight: 400;
-    text-align: center;
-    padding: 20px;
-    background-color: #f8f8f8;
+button:hover, .back-to-top:hover {
+    background-color: #6A6A6A;
 }
