@@ -7,9 +7,9 @@
 
 body {
     font-family: 'Raleway', sans-serif;
-    color: #333;
-    background-color: #F5F5F5; /* Light background */
-    padding: 20px; /* Adds space around content */
+    color: #2E2E2E; /* Dark earthy tone for text */
+    background-color: #FAF3E0; /* Light cream background */
+    padding: 20px;
 }
 
 /* Header */
@@ -18,13 +18,14 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    border-bottom: 2px solid #3B3B3B; /* Primary color */
+    border-bottom: 2px solid #4A5933; /* Dark green tone */
+    background-color: #4A5933; /* Dark green background */
 }
 
 header h1 {
     font-family: 'Playfair Display', serif;
     font-size: 2.5em;
-    color: #3B3B3B;
+    color: #FAF3E0; /* Light cream text */
     margin: 0;
 }
 
@@ -47,20 +48,20 @@ nav ul li {
 nav a {
     text-decoration: none;
     font-size: 1.1em;
-    color: #3B3B3B;
+    color: #2E2E2E; /* Dark text color */
     padding: 10px 15px;
 }
 
 nav a:hover {
-    color: #6A6A6A;
+    color: #B3863B; /* Accent burnt orange for hover */
 }
 
 /* Footer */
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #3B3B3B;
-    color: #F5F5F5; /* Contrasting text color */
+    background-color: #4A5933; /* Dark green tone */
+    color: #FAF3E0; /* Light cream text */
     font-size: 0.9em;
 }
 
@@ -86,7 +87,7 @@ ol {
 
 /* Guide Items */
 .guide-item {
-    border: 1px solid #3B3B3B;
+    border: 1px solid #4A5933; /* Dark green border */
     border-radius: 5px;
     padding: 15px;
     margin: 10px 0;
@@ -94,8 +95,8 @@ ol {
 
 /* Buttons and Links */
 button, .back-to-top {
-    background-color: #3B3B3B;
-    color: #F5F5F5;
+    background-color: #4A5933; /* Dark green */
+    color: #FAF3E0; /* Light cream text */
     border: none;
     padding: 10px 20px;
     border-radius: 3px;
@@ -104,130 +105,41 @@ button, .back-to-top {
 }
 
 button:hover, .back-to-top:hover {
-    background-color: #6A6A6A;
-}
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;700&display=swap');
-
-/* Basic Body Styling */
-body {
-    font-family: 'Raleway', sans-serif;
-    font-size: 16px;
-    font-weight: 300;
-    background-color: #F5F5F5; /* Light background */
-    color: #333; /* Dark text color */
-    margin: 0;
+    background-color: #6A6A6A; /* Accent color for hover */
 }
 
-/* Header Styling */
-header {
-    background-color: #3B3B3B; /* Primary color */
-    padding: 1rem 2%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-header h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.5em;
-    color: #F5F5F5;
-    margin: 0;
-}
+/* Additional Styling */
 header p {
     font-family: 'Raleway', sans-serif;
-    color: #9F9F9F; /* Accent color */
+    color: #9F9F9F; /* Subdued accent color */
     letter-spacing: .5px;
     margin: 0;
 }
 
-/* Navigation Styling */
-nav {
-    background-color: #6A6A6A;
-}
-nav ul {
-    list-style-type: none;
-    padding: 0 2%;
-    margin: 0;
-    display: flex;
-}
-nav a {
-    font-size: 1.1rem;
-    text-decoration: none;
-    color: #F5F5F5;
-    font-weight: 700;
-    display: block;
-    padding: 0.83rem 2rem;
-}
-nav li.active a {
-    background-color: #3B3B3B;
-    color: #F5F5F5;
-}
-nav a:hover {
-    color: #F5A623; /* Hover color */
-}
-
-/* Main Content Styling */
 main {
     padding: 1rem 2vw;
 }
+
 main h1 {
     font-family: 'Playfair Display', serif;
-    color: #3B3B3B;
+    color: #4A5933;
 }
+
 main h2 {
     font-family: 'Playfair Display', serif;
     color: #6A6A6A;
     margin-bottom: 0.2rem;
 }
-main p {
+
+main p, main ul li {
     font-family: 'Raleway', sans-serif;
-    color: #333;
-    margin: 0 0 0.3rem 0;
-}
-main ol {
-    padding: 0.5rem 3vw;
-    background-color: #EFEFEF;
-}
-main dl dt {
-    color: #3B3B3B;
-    font-weight: 700;
-}
-main dl dd {
-    color: #6A6A6A;
-    font-size: 0.9rem;
-}
-main ul {
-    list-style-type: square;
-}
-main ul li {
-    line-height: 125%;
-    margin-bottom: 0.5rem;
-    font-size: 0.9rem;
-}
-main address {
-    font-style: normal;
-    background-color: #F5A623;
-    padding: 0.5rem;
-    width: 12.5rem;
-    border: 1px solid #3B3B3B;
-    border-radius: 0.5rem;
-}
-main a {
-    color: #3B3B3B;
-}
-main a:hover {
-    color: #F5A623; /* Hover color */
+    color: #2E2E2E;
 }
 
-/* Footer Styling */
-footer {
-    background-color: #3B3B3B;
-    text-align: center;
-    color: #F5F5F5;
-    padding: 1rem 0;
-    font-size: 0.8rem;
+main a {
+    color: #4A5933; /* Dark green link color */
 }
-footer a {
-    color: #9F9F9F; /* Link color in footer */
-    text-decoration: none;
+
+main a:hover {
+    color: #B3863B; /* Burnt orange hover color */
 }
