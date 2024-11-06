@@ -106,3 +106,128 @@ button, .back-to-top {
 button:hover, .back-to-top:hover {
     background-color: #6A6A6A;
 }
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;700&display=swap');
+
+/* Basic Body Styling */
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    background-color: #F5F5F5; /* Light background */
+    color: #333; /* Dark text color */
+    margin: 0;
+}
+
+/* Header Styling */
+header {
+    background-color: #3B3B3B; /* Primary color */
+    padding: 1rem 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    color: #F5F5F5;
+    margin: 0;
+}
+header p {
+    font-family: 'Raleway', sans-serif;
+    color: #9F9F9F; /* Accent color */
+    letter-spacing: .5px;
+    margin: 0;
+}
+
+/* Navigation Styling */
+nav {
+    background-color: #6A6A6A;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0 2%;
+    margin: 0;
+    display: flex;
+}
+nav a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #F5F5F5;
+    font-weight: 700;
+    display: block;
+    padding: 0.83rem 2rem;
+}
+nav li.active a {
+    background-color: #3B3B3B;
+    color: #F5F5F5;
+}
+nav a:hover {
+    color: #F5A623; /* Hover color */
+}
+
+/* Main Content Styling */
+main {
+    padding: 1rem 2vw;
+}
+main h1 {
+    font-family: 'Playfair Display', serif;
+    color: #3B3B3B;
+}
+main h2 {
+    font-family: 'Playfair Display', serif;
+    color: #6A6A6A;
+    margin-bottom: 0.2rem;
+}
+main p {
+    font-family: 'Raleway', sans-serif;
+    color: #333;
+    margin: 0 0 0.3rem 0;
+}
+main ol {
+    padding: 0.5rem 3vw;
+    background-color: #EFEFEF;
+}
+main dl dt {
+    color: #3B3B3B;
+    font-weight: 700;
+}
+main dl dd {
+    color: #6A6A6A;
+    font-size: 0.9rem;
+}
+main ul {
+    list-style-type: square;
+}
+main ul li {
+    line-height: 125%;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+main address {
+    font-style: normal;
+    background-color: #F5A623;
+    padding: 0.5rem;
+    width: 12.5rem;
+    border: 1px solid #3B3B3B;
+    border-radius: 0.5rem;
+}
+main a {
+    color: #3B3B3B;
+}
+main a:hover {
+    color: #F5A623; /* Hover color */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #3B3B3B;
+    text-align: center;
+    color: #F5F5F5;
+    padding: 1rem 0;
+    font-size: 0.8rem;
+}
+footer a {
+    color: #9F9F9F; /* Link color in footer */
+    text-decoration: none;
+}
