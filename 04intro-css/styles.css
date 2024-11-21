@@ -7,6 +7,7 @@
 
 body {
     font-family: 'Raleway', sans-serif;
+    font-weight: 400;
     color: #2E2E2E; /* Dark earthy tone for text */
     background-color: #FAF3E0; /* Light cream background */
     padding: 20px;
@@ -20,6 +21,7 @@ header {
     padding: 10px;
     border-bottom: 2px solid #4A5933; /* Dark green tone */
     background-color: #4A5933; /* Dark green background */
+    text-align: center;
 }
 
 header h1 {
@@ -39,6 +41,7 @@ header h1 span {
 nav ul {
     display: flex;
     list-style: none;
+    list-style-type: none;
 }
 
 nav ul li {
@@ -54,6 +57,10 @@ nav a {
 
 nav a:hover {
     color: #B3863B; /* Accent burnt orange for hover */
+}
+
+nav .active a {
+    color: #B3863B;
 }
 
 /* Footer */
@@ -78,7 +85,7 @@ ul, ol {
 }
 
 ul li {
-    list-style-type: square;
+    list-style-type: none;
 }
 
 ol {
@@ -94,11 +101,16 @@ ol {
 }
 
 /* Buttons and Links */
+.back-to-top-container {
+    text-align: left; /* Center aligns it within the container */
+    margin: 20px 0; /* Adds spacing above and below */
+}
+
 button, .back-to-top {
     background-color: #4A5933; /* Dark green */
     color: #FAF3E0; /* Light cream text */
     border: none;
-    padding: 10px 20px;
+    padding: 5px 10px;
     border-radius: 3px;
     cursor: pointer;
     text-decoration: none;
