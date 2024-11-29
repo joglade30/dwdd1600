@@ -1,0 +1,224 @@
+/* Reset & Basic Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: #2E2E2E; /* Dark earthy tone for text */
+    background-color: #FAF3E0; /* Light cream background */
+    padding: 20px;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 2px solid #4A5933; /* Dark green tone */
+    background-color: #4A5933; /* Dark green background */
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    color: #FAF3E0; /* Light cream text */
+    margin: 0;
+}
+
+header h1 span {
+    font-size: 1em;
+    color: #6A6A6A; /* Accent color */
+    display: block;
+}
+
+/* Navigation */
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1.1em;
+    color: #FAF3E0; /* Dark text color */
+    padding: 10px 15px;
+}
+
+nav a:hover {
+    color: #B3863B; /* Accent burnt orange for hover */
+}
+
+nav .active a {
+    color: #B3863B;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #4A5933; /* Dark green tone */
+    color: #FAF3E0; /* Light cream text */
+    font-size: 0.9em;
+}
+
+/* Content */
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Lists */
+ul, ol {
+    margin: 20px;
+    padding: 0 20px;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+/* Guide Items */
+.guide-item {
+    border: 1px solid #4A5933; /* Dark green border */
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+/* Buttons and Links */
+
+.back-to-top-container {
+    text-align: left; /* Center aligns it within the container */
+    margin: 20px 0; /* Adds spacing above and below */
+}
+
+button, .back-to-top {
+    background-color: #4A5933; /* Dark green */
+    color: #FAF3E0; /* Light cream text */
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+button:hover, .back-to-top:hover {
+    background-color: #6A6A6A; /* Accent color for hover */
+}
+
+/* Additional Styling */
+header p {
+    font-family: 'Raleway', sans-serif;
+    color: #9F9F9F; /* Subdued accent color */
+    letter-spacing: .5px;
+    margin: 0;
+}
+
+main {
+    padding: 1rem 2vw;
+}
+
+main h1 {
+    font-family: 'Playfair Display', serif;
+    color: #4A5933;
+}
+
+main h2 {
+    font-family: 'Playfair Display', serif;
+    color: #6A6A6A;
+    margin-bottom: 0.2rem;
+}
+
+main p, main ul li {
+    font-family: 'Raleway', sans-serif;
+    color: #2E2E2E;
+}
+
+main a {
+    color: #4A5933; /* Dark green link color */
+}
+
+main a:hover {
+    color: #B3863B; /* Burnt orange hover color */
+}
+
+figure.wrapped {
+    width: 30%;
+    margin: 2% 0 0 2%;
+    float: right;
+}
+figure.wrapped img {
+    width: 100%;
+    height: auto;
+}
+figure.wrapped figcaption {
+    text-align: center;
+    font-size: .75rem;
+}
+
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.gallery figure {
+    margin: .5rem 2% 0 0;
+}
+
+div.gallery figcaption {
+    text-align: center;
+    font-size: .8rem;
+    color: #b64e11;
+}
+
+.myForm fieldset {
+    border: 1px solid #B3863B;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+}
+.myForm legend {
+    color: #B3863B;
+    font-size: .8rem;
+}
+.myForm label {
+    margin: .5rem;
+}
+.myForm label, .myForm select, .myForm [type=text], .myForm [type=email], .myForm [type=tel], .myForm textarea {
+    display: block;
+}
+.myForm [type=text], .myForm [type=tel], .myForm [type=email], .myForm select, .myForm textarea {
+    border: solid 1px #888;
+    padding: .3rem;
+    width: 250px;
+    border-radius: .3rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+}
+.myForm textarea {
+    height: 6rem;
+}
+.myForm :required {
+    background-color: rgba(156,51,52,0.1);
+}
+.myForm [type=submit] {
+    background-color: #B3863B;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: white;
+    margin: 1rem 0 0 1vw;
+}
