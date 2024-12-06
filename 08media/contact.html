@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure Atlas - Home</title>
+    <meta name="author" content="Adventure Atlas Team">
+    <meta name="description" content="Explore detailed guides for hiking trails, camping spots, and other outdoor adventures at Adventure Atlas. Your guide to the outdoors.">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="imag/x-icon" href="favicon.ico">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+            <img src="images/logo.png" alt="site logo" width="100">
+            </div>
+            <h1 id="top">Adventure Atlas</h1>
+            <p>Your Guide to the Outdoors</p>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="guides.html">Guides</a></li>
+                    <li><a href="Resources.html">Resources</a></li>
+                    <li><a href="#">Gear</a></li>
+                    <li><a href="#">About</a></li>
+                    <li class="active"><a href="contact.html">Contact</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- start the page main -->
+    <main>
+        <h1>Contact Us</h1>
+        <form method="get" class="myForm" action="thanks.html">
+        
+        <fieldset>
+        <legend>Customer Information</legend>
+        <label>First Name*<input type="text" name="fname" required></label>
+        <label>Last Name*<input type="text" name="lname" required></label>
+        <label>Cell Number*<input type="tel" name="phone" required placeholder="999-999-999"></label> 
+        <label>Email*<input type="email" name="email" required></label> 
+        </fieldset> 
+            
+        <fieldset>
+        <legend>Preferred Contact Method</legend> 
+            <label><input type="radio" name="contact_method" value="contact-phone">Phone</label>
+            <label><input type="radio" name="contact_method" value="contact-email">Email</label>   
+        </fieldset>
+            
+        <fieldset>
+        <legend>Interests</legend>
+            <label><input type="checkbox" name="hiking" value="yes"> Hiking</label>
+            <label><input type="checkbox" name="camping" value="yes"> Camping</label>
+            <label><input type="checkbox" name="fishing" value="yes"> Fishing</label>
+            <label><input type="checkbox" name="climbing" value="yes"> Rock Climbing</label>
+            
+            <label>Favorite Destination
+            <select name="time">
+            <option value="none">Please Select</option>
+            <option value="mountains">Mountains</option>
+            <option value="forest">Forest</option>
+            <option value="beach">Beach</option>
+            </select>
+            </label>
+        </fieldset>
+            
+        <label>Comments
+            <textarea name="comments"></textarea>
+            </label>
+            
+            
+        <input type="submit" value="Submit">
+        </form>
+        
+        <h2>Information</h2>
+        <h2>Phone</h2>
+        <p>385-555-1324</p>
+        <h2>Email Address</h2>
+        <p>adventureatlas@gmail.com</p>
+        <h2>Address</h2>
+        <address>
+            Adventure Atlas<br>
+            1234 Trailblazer Lane<br>
+            Hiker's Haven, UT 84057
+        </address>
+        <h2>Location Map</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12175.370975922926!2d-111.72459386949552!3d40.2792433452905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874d9b1e100a21fd%3A0x586ef4d9686195c3!2sUVU%20Outdoor%20Adventure%20Center!5e0!3m2!1sen!2sus!4v1733513552811!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Adventure Atlas. All Rights Reserved.</p>
+            <ul>
+                <li><a href="mailto:info@adventureatlas.com">Email Us</a></li>
+                <li><a href="tel:+18005555555">Call Us: (800) 555-5555</a></li>
+                <li><a href="https://www.nps.gov" target="_blank">National Park Service</a></li>
+                <li><a href="https://www.rei.com" target="_blank">REI - Outdoor Gear</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
